@@ -1,0 +1,711 @@
+/* ==========================
+   ORBIT SPINNER
+========================== */
+
+.orbit-spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:
+    5px solid
+    transparent;
+
+    border-top:
+    5px solid
+    #7c3aed;
+
+    border-right:
+    5px solid
+    #06b6d4;
+
+    animation:
+    orbitSpin
+    1s
+    linear
+    infinite;
+}
+
+@keyframes orbitSpin{
+
+    from{
+
+        transform:
+        rotate(0deg);
+    }
+
+    to{
+
+        transform:
+        rotate(360deg);
+    }
+}
+
+/* ==========================
+   DUAL RING SPINNER
+========================== */
+
+.dual-ring-spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:
+    6px solid
+    rgba(
+    255,
+    255,
+    255,
+    .15
+    );
+
+    border-top:
+    6px solid
+    #06b6d4;
+
+    animation:
+    dualRingSpin
+    .9s
+    linear
+    infinite;
+}
+
+@keyframes dualRingSpin{
+
+    from{
+
+        transform:
+        rotate(0deg);
+    }
+
+    to{
+
+        transform:
+        rotate(360deg);
+    }
+}
+
+/* ==========================
+   PULSE SPINNER
+========================== */
+
+.pulse-spinner{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+    135deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    animation:
+    pulseSpin
+    1.5s
+    ease-in-out
+    infinite;
+}
+
+@keyframes pulseSpin{
+
+    0%{
+
+        transform:
+        scale(.7);
+
+        opacity:.5;
+    }
+
+    50%{
+
+        transform:
+        scale(1.2);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        scale(.7);
+
+        opacity:.5;
+    }
+}
+
+/* ==========================
+   NEON SPINNER
+========================== */
+
+.neon-spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:
+    5px solid
+    transparent;
+
+    border-top:
+    5px solid
+    #ec4899;
+
+    border-right:
+    5px solid
+    #8b5cf6;
+
+    box-shadow:
+    0 0 15px
+    #ec4899,
+
+    0 0 30px
+    #8b5cf6;
+
+    animation:
+    neonSpin
+    .8s
+    linear
+    infinite;
+}
+
+@keyframes neonSpin{
+
+    from{
+
+        transform:
+        rotate(0deg);
+    }
+
+    to{
+
+        transform:
+        rotate(360deg);
+    }
+}
+
+/* ==========================
+   INFINITY SPINNER
+========================== */
+
+.infinity-spinner{
+
+    position:relative;
+
+    width:90px;
+
+    height:45px;
+}
+
+.infinity-spinner::before,
+.infinity-spinner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:35px;
+
+    height:35px;
+
+    border:
+    4px solid
+    #06b6d4;
+
+    border-radius:50%;
+}
+
+.infinity-spinner::before{
+
+    left:0;
+}
+
+.infinity-spinner::after{
+
+    right:0;
+
+    border-color:
+    #7c3aed;
+}
+
+.infinity-spinner{
+
+    animation:
+    infinityPulse
+    1.2s
+    ease-in-out
+    infinite;
+}
+
+@keyframes infinityPulse{
+
+    0%,100%{
+
+        transform:
+        scale(1);
+    }
+
+    50%{
+
+        transform:
+        scale(.8);
+    }
+}
+
+/* ==========================
+   RIPPLE SPINNER
+========================== */
+
+.ripple-spinner{
+
+    position:relative;
+
+    width:70px;
+
+    height:70px;
+}
+
+.ripple-spinner::before,
+.ripple-spinner::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border:
+    4px solid
+    #06b6d4;
+
+    border-radius:50%;
+
+    animation:
+    rippleEffect
+    2s
+    infinite;
+}
+
+.ripple-spinner::after{
+
+    animation-delay:
+    1s;
+}
+
+@keyframes rippleEffect{
+
+    0%{
+
+        transform:
+        scale(.2);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        scale(1.7);
+
+        opacity:0;
+    }
+}
+
+/* ==========================
+   CUBE SPINNER
+========================== */
+
+.cube-spinner{
+
+    width:55px;
+
+    height:55px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    border-radius:8px;
+
+    animation:
+    cubeRotate
+    1.5s
+    ease-in-out
+    infinite;
+}
+
+@keyframes cubeRotate{
+
+    0%{
+
+        transform:
+        rotate(0deg)
+        scale(1);
+    }
+
+    25%{
+
+        transform:
+        rotate(90deg)
+        scale(1.1);
+    }
+
+    50%{
+
+        transform:
+        rotate(180deg)
+        scale(1);
+    }
+
+    75%{
+
+        transform:
+        rotate(270deg)
+        scale(1.1);
+    }
+
+    100%{
+
+        transform:
+        rotate(360deg)
+        scale(1);
+    }
+}
+
+/* ==========================
+   DNA SPINNER
+========================== */
+
+.dna-spinner{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+}
+
+.dna-spinner span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:
+    #06b6d4;
+
+    animation:
+    dnaWave
+    1s
+    infinite
+    ease-in-out;
+}
+
+.dna-spinner span:nth-child(2){
+
+    animation-delay:
+    .1s;
+}
+
+.dna-spinner span:nth-child(3){
+
+    animation-delay:
+    .2s;
+}
+
+.dna-spinner span:nth-child(4){
+
+    animation-delay:
+    .3s;
+}
+
+.dna-spinner span:nth-child(5){
+
+    animation-delay:
+    .4s;
+}
+
+@keyframes dnaWave{
+
+    0%,100%{
+
+        transform:
+        translateY(0);
+    }
+
+    50%{
+
+        transform:
+        translateY(-20px);
+    }
+}
+
+/* ==========================
+   GALAXY SPINNER
+========================== */
+
+.galaxy-spinner{
+
+    position:relative;
+
+    width:80px;
+
+    height:80px;
+
+    border:
+    2px solid
+    rgba(
+    255,
+    255,
+    255,
+    .15
+    );
+
+    border-radius:50%;
+
+    animation:
+    galaxySpin
+    2s
+    linear
+    infinite;
+}
+
+.galaxy-spinner div{
+
+    position:absolute;
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:
+    #06b6d4;
+
+    top:-7px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    box-shadow:
+    0 0 20px
+    #06b6d4;
+}
+
+@keyframes galaxySpin{
+
+    from{
+
+        transform:
+        rotate(0deg);
+    }
+
+    to{
+
+        transform:
+        rotate(360deg);
+    }
+}
+
+/* ==========================
+   WAVE DOTS SPINNER
+========================== */
+
+.wave-spinner{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:6px;
+}
+
+.wave-spinner span{
+
+    width:10px;
+
+    height:20px;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+    180deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    animation:
+    waveDots
+    .8s
+    ease-in-out
+    infinite;
+}
+
+.wave-spinner span:nth-child(2){
+
+    animation-delay:
+    .1s;
+}
+
+.wave-spinner span:nth-child(3){
+
+    animation-delay:
+    .2s;
+}
+
+.wave-spinner span:nth-child(4){
+
+    animation-delay:
+    .3s;
+}
+
+.wave-spinner span:nth-child(5){
+
+    animation-delay:
+    .4s;
+}
+
+@keyframes waveDots{
+
+    0%,100%{
+
+        height:20px;
+    }
+
+    50%{
+
+        height:50px;
+    }
+}
+
+/* ==========================
+   SMOOTH RENDERING
+========================== */
+
+.orbit-spinner,
+.dual-ring-spinner,
+.pulse-spinner,
+.neon-spinner,
+.infinity-spinner,
+.ripple-spinner,
+.cube-spinner,
+.dna-spinner,
+.galaxy-spinner,
+.wave-spinner{
+
+    will-change:
+    transform;
+
+    transform:
+    translateZ(0);
+}
+
+/* ==========================
+   PREMIUM GLOW
+========================== */
+
+.spinner-preview:hover{
+
+    box-shadow:
+    inset 0 0 20px
+    rgba(
+    124,
+    58,
+    237,
+    .15
+    ),
+
+    0 0 30px
+    rgba(
+    6,
+    182,
+    212,
+    .10
+    );
+}
+
+/* ==========================
+   CARD ANIMATION
+========================== */
+
+.spinner-card{
+
+    animation:
+    cardFade
+    .7s
+    ease;
+}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(25px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+/* ==========================
+   SPINNER TITLE EFFECT
+========================== */
+
+.spinner-card h3{
+
+    transition:
+    .3s ease;
+}
+
+.spinner-card:hover h3{
+
+    color:
+    #22d3ee;
+
+    letter-spacing:
+    1px;
+}
+
+/* ==========================
+   FINAL POLISH
+========================== */
+
+.spinner-preview{
+
+    overflow:hidden;
+}
+
+.spinner-card{
+
+    cursor:default;
+}
